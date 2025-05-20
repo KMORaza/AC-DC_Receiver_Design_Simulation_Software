@@ -1,0 +1,1 @@
+This software which provides an environment for simulation and analysis of AC/DC receiver design. It has a wide range of functionalities and it works fine but I honestly say that it doesn't work as good as I wanted it to be while I was writing it.
