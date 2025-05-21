@@ -1,0 +1,1070 @@
+﻿namespace ACDCSimulator
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.ToolTip toolTip;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            this.lblThermalRunaway = new System.Windows.Forms.Label();
+            this.lblThermalRunawayLabel = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabSimulation = new System.Windows.Forms.TabPage();
+            this.groupBoxInputs = new System.Windows.Forms.GroupBox();
+            this.panelInputs = new System.Windows.Forms.Panel();
+            this.comboSwitchingDevice = new System.Windows.Forms.ComboBox();
+            this.lblSwitchingDevice = new System.Windows.Forms.Label();
+            this.txtDigitalCoeff = new System.Windows.Forms.TextBox();
+            this.lblDigitalCoeff = new System.Windows.Forms.Label();
+            this.txtPWMCarrierFreq = new System.Windows.Forms.TextBox();
+            this.lblPWMCarrierFreq = new System.Windows.Forms.Label();
+            this.txtPLLRefFreq = new System.Windows.Forms.TextBox();
+            this.lblPLLRefFreq = new System.Windows.Forms.Label();
+            this.txtPIDKd = new System.Windows.Forms.TextBox();
+            this.lblPIDKd = new System.Windows.Forms.Label();
+            this.txtPIDKi = new System.Windows.Forms.TextBox();
+            this.lblPIDKi = new System.Windows.Forms.Label();
+            this.txtPIDKp = new System.Windows.Forms.TextBox();
+            this.lblPIDKp = new System.Windows.Forms.Label();
+            this.txtRegulatorVoltage = new System.Windows.Forms.TextBox();
+            this.lblRegulatorVoltage = new System.Windows.Forms.Label();
+            this.comboRegulator = new System.Windows.Forms.ComboBox();
+            this.lblRegulator = new System.Windows.Forms.Label();
+            this.txtFilterCutoff = new System.Windows.Forms.TextBox();
+            this.lblFilterCutoff = new System.Windows.Forms.Label();
+            this.txtFilterInductance = new System.Windows.Forms.TextBox();
+            this.lblFilterInductance = new System.Windows.Forms.Label();
+            this.txtFilterCapacitance = new System.Windows.Forms.TextBox();
+            this.lblFilterCapacitance = new System.Windows.Forms.Label();
+            this.comboFilter = new System.Windows.Forms.ComboBox();
+            this.lblFilter = new System.Windows.Forms.Label();
+            this.comboRectifier = new System.Windows.Forms.ComboBox();
+            this.lblRectifier = new System.Windows.Forms.Label();
+            this.txtTurnsRatio = new System.Windows.Forms.TextBox();
+            this.lblTurnsRatio = new System.Windows.Forms.Label();
+            this.txtInputVoltage = new System.Windows.Forms.TextBox();
+            this.lblInputVoltage = new System.Windows.Forms.Label();
+            this.txtLoadResistance = new System.Windows.Forms.TextBox();
+            this.lblLoadResistance = new System.Windows.Forms.Label();
+            this.btnSimulate = new System.Windows.Forms.Button();
+            this.groupBoxResults = new System.Windows.Forms.GroupBox();
+            this.lblMismatchLoss = new System.Windows.Forms.Label();
+            this.lblMismatchLossLabel = new System.Windows.Forms.Label();
+            this.lblReflectionCoefficient = new System.Windows.Forms.Label();
+            this.lblReflectionCoefficientLabel = new System.Windows.Forms.Label();
+            this.lblOutputImpedance = new System.Windows.Forms.Label();
+            this.lblOutputImpedanceLabel = new System.Windows.Forms.Label();
+            this.lblInputImpedance = new System.Windows.Forms.Label();
+            this.lblInputImpedanceLabel = new System.Windows.Forms.Label();
+            this.lblEMI = new System.Windows.Forms.Label();
+            this.lblEMILabel = new System.Windows.Forms.Label();
+            this.lblSignalToNoiseRatio = new System.Windows.Forms.Label();
+            this.lblSignalToNoiseRatioLabel = new System.Windows.Forms.Label();
+            this.lblPowerFactor = new System.Windows.Forms.Label();
+            this.lblPowerFactorLabel = new System.Windows.Forms.Label();
+            this.lblTotalHarmonicDistortion = new System.Windows.Forms.Label();
+            this.lblTotalHarmonicDistortionLabel = new System.Windows.Forms.Label();
+            this.lblDominantHarmonic = new System.Windows.Forms.Label();
+            this.lblDominantHarmonicLabel = new System.Windows.Forms.Label();
+            this.lblPowerDissipation = new System.Windows.Forms.Label();
+            this.lblPowerDissipationLabel = new System.Windows.Forms.Label();
+            this.lblRippleVoltage = new System.Windows.Forms.Label();
+            this.lblRippleVoltageLabel = new System.Windows.Forms.Label();
+            this.lblOutputVoltage = new System.Windows.Forms.Label();
+            this.lblOutputVoltageLabel = new System.Windows.Forms.Label();
+            this.groupBoxWaveform = new System.Windows.Forms.GroupBox();
+            this.chartWaveform = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabAnalysis = new System.Windows.Forms.TabPage();
+            this.groupBoxRootLocus = new System.Windows.Forms.GroupBox();
+            this.chartRootLocus = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.groupBoxNyquist = new System.Windows.Forms.GroupBox();
+            this.chartNyquist = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.groupBoxBode = new System.Windows.Forms.GroupBox();
+            this.chartBode = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.tabControl.SuspendLayout();
+            this.tabSimulation.SuspendLayout();
+            this.groupBoxInputs.SuspendLayout();
+            this.panelInputs.SuspendLayout();
+            this.groupBoxResults.SuspendLayout();
+            this.groupBoxWaveform.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartWaveform)).BeginInit();
+            this.tabAnalysis.SuspendLayout();
+            this.groupBoxRootLocus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartRootLocus)).BeginInit();
+            this.groupBoxNyquist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartNyquist)).BeginInit();
+            this.groupBoxBode.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBode)).BeginInit();
+            this.SuspendLayout();
+
+            this.toolTip.BackColor = System.Drawing.Color.FromArgb(192, 192, 192);
+            this.toolTip.ForeColor = System.Drawing.Color.Black;
+
+            this.tabControl.Controls.Add(this.tabSimulation);
+            this.tabControl.Controls.Add(this.tabAnalysis);
+            this.tabControl.Location = new System.Drawing.Point(12, 12);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(616, 656);
+            this.tabControl.TabIndex = 0;
+            this.tabControl.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+            this.tabSimulation.Controls.Add(this.groupBoxInputs);
+            this.tabSimulation.Controls.Add(this.groupBoxResults);
+            this.tabSimulation.Controls.Add(this.groupBoxWaveform);
+            this.tabSimulation.Location = new System.Drawing.Point(4, 24);
+            this.tabSimulation.Name = "tabSimulation";
+            this.tabSimulation.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSimulation.Size = new System.Drawing.Size(608, 628);
+            this.tabSimulation.TabIndex = 0;
+            this.tabSimulation.Text = "Simulation";
+            this.tabSimulation.UseVisualStyleBackColor = true;
+
+            this.groupBoxInputs.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.groupBoxInputs.Controls.Add(this.panelInputs);
+            this.groupBoxInputs.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxInputs.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxInputs.Location = new System.Drawing.Point(10, 10);
+            this.groupBoxInputs.Name = "groupBoxInputs";
+            this.groupBoxInputs.Size = new System.Drawing.Size(300, 600);
+            this.groupBoxInputs.TabIndex = 0;
+            this.groupBoxInputs.TabStop = false;
+            this.groupBoxInputs.Text = "Circuit Configuration";
+
+            this.panelInputs.AutoScroll = true;
+            this.panelInputs.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.panelInputs.Controls.Add(this.comboSwitchingDevice);
+            this.panelInputs.Controls.Add(this.lblSwitchingDevice);
+            this.panelInputs.Controls.Add(this.txtDigitalCoeff);
+            this.panelInputs.Controls.Add(this.lblDigitalCoeff);
+            this.panelInputs.Controls.Add(this.txtPWMCarrierFreq);
+            this.panelInputs.Controls.Add(this.lblPWMCarrierFreq);
+            this.panelInputs.Controls.Add(this.txtPLLRefFreq);
+            this.panelInputs.Controls.Add(this.lblPLLRefFreq);
+            this.panelInputs.Controls.Add(this.txtPIDKd);
+            this.panelInputs.Controls.Add(this.lblPIDKd);
+            this.panelInputs.Controls.Add(this.txtPIDKi);
+            this.panelInputs.Controls.Add(this.lblPIDKi);
+            this.panelInputs.Controls.Add(this.txtPIDKp);
+            this.panelInputs.Controls.Add(this.lblPIDKp);
+            this.panelInputs.Controls.Add(this.txtRegulatorVoltage);
+            this.panelInputs.Controls.Add(this.lblRegulatorVoltage);
+            this.panelInputs.Controls.Add(this.comboRegulator);
+            this.panelInputs.Controls.Add(this.lblRegulator);
+            this.panelInputs.Controls.Add(this.txtFilterCutoff);
+            this.panelInputs.Controls.Add(this.lblFilterCutoff);
+            this.panelInputs.Controls.Add(this.txtFilterInductance);
+            this.panelInputs.Controls.Add(this.lblFilterInductance);
+            this.panelInputs.Controls.Add(this.txtFilterCapacitance);
+            this.panelInputs.Controls.Add(this.lblFilterCapacitance);
+            this.panelInputs.Controls.Add(this.comboFilter);
+            this.panelInputs.Controls.Add(this.lblFilter);
+            this.panelInputs.Controls.Add(this.comboRectifier);
+            this.panelInputs.Controls.Add(this.lblRectifier);
+            this.panelInputs.Controls.Add(this.txtTurnsRatio);
+            this.panelInputs.Controls.Add(this.lblTurnsRatio);
+            this.panelInputs.Controls.Add(this.txtInputVoltage);
+            this.panelInputs.Controls.Add(this.lblInputVoltage);
+            this.panelInputs.Controls.Add(this.txtLoadResistance);
+            this.panelInputs.Controls.Add(this.lblLoadResistance);
+            this.panelInputs.Controls.Add(this.btnSimulate);
+            this.panelInputs.Location = new System.Drawing.Point(10, 20);
+            this.panelInputs.Name = "panelInputs";
+            this.panelInputs.Size = new System.Drawing.Size(280, 570);
+            this.panelInputs.TabIndex = 0;
+
+            this.comboSwitchingDevice.BackColor = System.Drawing.Color.White;
+            this.comboSwitchingDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboSwitchingDevice.Font = new System.Drawing.Font("MS Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboSwitchingDevice.ForeColor = System.Drawing.Color.Black;
+            this.comboSwitchingDevice.Location = new System.Drawing.Point(150, 350);
+            this.comboSwitchingDevice.Name = "comboSwitchingDevice";
+            this.comboSwitchingDevice.Size = new System.Drawing.Size(120, 21);
+            this.comboSwitchingDevice.TabIndex = 27;
+            this.toolTip.SetToolTip(this.comboSwitchingDevice, "Select the switching device type");
+
+            this.lblSwitchingDevice.AutoSize = true;
+            this.lblSwitchingDevice.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSwitchingDevice.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSwitchingDevice.Location = new System.Drawing.Point(0, 352);
+            this.lblSwitchingDevice.Name = "lblSwitchingDevice";
+            this.lblSwitchingDevice.Size = new System.Drawing.Size(105, 15);
+            this.lblSwitchingDevice.TabIndex = 26;
+            this.lblSwitchingDevice.Text = "Switching Device:";
+
+            this.txtDigitalCoeff.BackColor = System.Drawing.Color.White;
+            this.txtDigitalCoeff.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtDigitalCoeff.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDigitalCoeff.ForeColor = System.Drawing.Color.Black;
+            this.txtDigitalCoeff.Location = new System.Drawing.Point(150, 560);
+            this.txtDigitalCoeff.Name = "txtDigitalCoeff";
+            this.txtDigitalCoeff.Size = new System.Drawing.Size(120, 24);
+            this.txtDigitalCoeff.TabIndex = 25;
+            this.txtDigitalCoeff.Text = "1.0";
+            this.toolTip.SetToolTip(this.txtDigitalCoeff, "Enter comma-separated digital filter coefficients");
+
+            this.lblDigitalCoeff.AutoSize = true;
+            this.lblDigitalCoeff.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDigitalCoeff.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblDigitalCoeff.Location = new System.Drawing.Point(0, 562);
+            this.lblDigitalCoeff.Name = "lblDigitalCoeff";
+            this.lblDigitalCoeff.Size = new System.Drawing.Size(147, 15);
+            this.lblDigitalCoeff.TabIndex = 24;
+            this.lblDigitalCoeff.Text = "Digital Coefficients:";
+
+            this.txtPWMCarrierFreq.BackColor = System.Drawing.Color.White;
+            this.txtPWMCarrierFreq.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtPWMCarrierFreq.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPWMCarrierFreq.ForeColor = System.Drawing.Color.Black;
+            this.txtPWMCarrierFreq.Location = new System.Drawing.Point(150, 530);
+            this.txtPWMCarrierFreq.Name = "txtPWMCarrierFreq";
+            this.txtPWMCarrierFreq.Size = new System.Drawing.Size(120, 24);
+            this.txtPWMCarrierFreq.TabIndex = 23;
+            this.txtPWMCarrierFreq.Text = "1000";
+            this.toolTip.SetToolTip(this.txtPWMCarrierFreq, "Enter PWM carrier frequency in Hz");
+
+            this.lblPWMCarrierFreq.AutoSize = true;
+            this.lblPWMCarrierFreq.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPWMCarrierFreq.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPWMCarrierFreq.Location = new System.Drawing.Point(0, 532);
+            this.lblPWMCarrierFreq.Name = "lblPWMCarrierFreq";
+            this.lblPWMCarrierFreq.Size = new System.Drawing.Size(147, 15);
+            this.lblPWMCarrierFreq.TabIndex = 22;
+            this.lblPWMCarrierFreq.Text = "PWM Carrier Freq. (Hz):";
+
+            this.txtPLLRefFreq.BackColor = System.Drawing.Color.White;
+            this.txtPLLRefFreq.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtPLLRefFreq.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPLLRefFreq.ForeColor = System.Drawing.Color.Black;
+            this.txtPLLRefFreq.Location = new System.Drawing.Point(150, 500);
+            this.txtPLLRefFreq.Name = "txtPLLRefFreq";
+            this.txtPLLRefFreq.Size = new System.Drawing.Size(120, 24);
+            this.txtPLLRefFreq.TabIndex = 21;
+            this.txtPLLRefFreq.Text = "60";
+            this.toolTip.SetToolTip(this.txtPLLRefFreq, "Enter PLL reference frequency in Hz");
+
+            this.lblPLLRefFreq.AutoSize = true;
+            this.lblPLLRefFreq.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPLLRefFreq.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPLLRefFreq.Location = new System.Drawing.Point(0, 502);
+            this.lblPLLRefFreq.Name = "lblPLLRefFreq";
+            this.lblPLLRefFreq.Size = new System.Drawing.Size(133, 15);
+            this.lblPLLRefFreq.TabIndex = 20;
+            this.lblPLLRefFreq.Text = "PLL Ref. Freq. (Hz):";
+
+            this.txtPIDKd.BackColor = System.Drawing.Color.White;
+            this.txtPIDKd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtPIDKd.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPIDKd.ForeColor = System.Drawing.Color.Black;
+            this.txtPIDKd.Location = new System.Drawing.Point(150, 470);
+            this.txtPIDKd.Name = "txtPIDKd";
+            this.txtPIDKd.Size = new System.Drawing.Size(120, 24);
+            this.txtPIDKd.TabIndex = 19;
+            this.txtPIDKd.Text = "0.01";
+            this.toolTip.SetToolTip(this.txtPIDKd, "Enter PID derivative gain (Kd)");
+ 
+            this.lblPIDKd.AutoSize = true;
+            this.lblPIDKd.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPIDKd.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPIDKd.Location = new System.Drawing.Point(0, 472);
+            this.lblPIDKd.Name = "lblPIDKd";
+            this.lblPIDKd.Size = new System.Drawing.Size(56, 15);
+            this.lblPIDKd.TabIndex = 18;
+            this.lblPIDKd.Text = "PID Kd:";
+
+            this.txtPIDKi.BackColor = System.Drawing.Color.White;
+            this.txtPIDKi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtPIDKi.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPIDKi.ForeColor = System.Drawing.Color.Black;
+            this.txtPIDKi.Location = new System.Drawing.Point(150, 440);
+            this.txtPIDKi.Name = "txtPIDKi";
+            this.txtPIDKi.Size = new System.Drawing.Size(120, 24);
+            this.txtPIDKi.TabIndex = 17;
+            this.txtPIDKi.Text = "0.1";
+            this.toolTip.SetToolTip(this.txtPIDKi, "Enter PID integral gain (Ki)");
+
+            this.lblPIDKi.AutoSize = true;
+            this.lblPIDKi.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPIDKi.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPIDKi.Location = new System.Drawing.Point(0, 442);
+            this.lblPIDKi.Name = "lblPIDKi";
+            this.lblPIDKi.Size = new System.Drawing.Size(49, 15);
+            this.lblPIDKi.TabIndex = 16;
+            this.lblPIDKi.Text = "PID Ki:";
+
+            this.txtPIDKp.BackColor = System.Drawing.Color.White;
+            this.txtPIDKp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtPIDKp.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPIDKp.ForeColor = System.Drawing.Color.Black;
+            this.txtPIDKp.Location = new System.Drawing.Point(150, 410);
+            this.txtPIDKp.Name = "txtPIDKp";
+            this.txtPIDKp.Size = new System.Drawing.Size(120, 24);
+            this.txtPIDKp.TabIndex = 15;
+            this.txtPIDKp.Text = "1.0";
+            this.toolTip.SetToolTip(this.txtPIDKp, "Enter PID proportional gain (Kp)");
+
+            this.lblPIDKp.AutoSize = true;
+            this.lblPIDKp.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPIDKp.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPIDKp.Location = new System.Drawing.Point(0, 412);
+            this.lblPIDKp.Name = "lblPIDKp";
+            this.lblPIDKp.Size = new System.Drawing.Size(56, 15);
+            this.lblPIDKp.TabIndex = 14;
+            this.lblPIDKp.Text = "PID Kp:";
+
+            this.txtRegulatorVoltage.BackColor = System.Drawing.Color.White;
+            this.txtRegulatorVoltage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtRegulatorVoltage.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegulatorVoltage.ForeColor = System.Drawing.Color.Black;
+            this.txtRegulatorVoltage.Location = new System.Drawing.Point(150, 380);
+            this.txtRegulatorVoltage.Name = "txtRegulatorVoltage";
+            this.txtRegulatorVoltage.Size = new System.Drawing.Size(120, 24);
+            this.txtRegulatorVoltage.TabIndex = 13;
+            this.txtRegulatorVoltage.Text = "5";
+            this.toolTip.SetToolTip(this.txtRegulatorVoltage, "Enter the desired regulator output voltage in volts");
+
+            this.lblRegulatorVoltage.AutoSize = true;
+            this.lblRegulatorVoltage.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegulatorVoltage.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblRegulatorVoltage.Location = new System.Drawing.Point(0, 382);
+            this.lblRegulatorVoltage.Name = "lblRegulatorVoltage";
+            this.lblRegulatorVoltage.Size = new System.Drawing.Size(126, 15);
+            this.lblRegulatorVoltage.TabIndex = 12;
+            this.lblRegulatorVoltage.Text = "Regulator Voltage (V):";
+
+            this.comboRegulator.BackColor = System.Drawing.Color.White;
+            this.comboRegulator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboRegulator.Font = new System.Drawing.Font("MS Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboRegulator.ForeColor = System.Drawing.Color.Black;
+            this.comboRegulator.Location = new System.Drawing.Point(150, 320);
+            this.comboRegulator.Name = "comboRegulator";
+            this.comboRegulator.Size = new System.Drawing.Size(120, 21);
+            this.comboRegulator.TabIndex = 11;
+            this.toolTip.SetToolTip(this.comboRegulator, "Select the regulator type");
+ 
+            this.lblRegulator.AutoSize = true;
+            this.lblRegulator.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegulator.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblRegulator.Location = new System.Drawing.Point(0, 322);
+            this.lblRegulator.Name = "lblRegulator";
+            this.lblRegulator.Size = new System.Drawing.Size(63, 15);
+            this.lblRegulator.TabIndex = 10;
+            this.lblRegulator.Text = "Regulator:";
+
+            this.txtFilterCutoff.BackColor = System.Drawing.Color.White;
+            this.txtFilterCutoff.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtFilterCutoff.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilterCutoff.ForeColor = System.Drawing.Color.Black;
+            this.txtFilterCutoff.Location = new System.Drawing.Point(150, 290);
+            this.txtFilterCutoff.Name = "txtFilterCutoff";
+            this.txtFilterCutoff.Size = new System.Drawing.Size(120, 24);
+            this.txtFilterCutoff.TabIndex = 9;
+            this.txtFilterCutoff.Text = "100";
+            this.toolTip.SetToolTip(this.txtFilterCutoff, "Enter the cutoff frequency for active filter in Hz");
+
+            this.lblFilterCutoff.AutoSize = true;
+            this.lblFilterCutoff.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilterCutoff.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblFilterCutoff.Location = new System.Drawing.Point(0, 292);
+            this.lblFilterCutoff.Name = "lblFilterCutoff";
+            this.lblFilterCutoff.Size = new System.Drawing.Size(91, 15);
+            this.lblFilterCutoff.TabIndex = 8;
+            this.lblFilterCutoff.Text = "Cutoff Freq. (Hz):";
+
+            this.txtFilterInductance.BackColor = System.Drawing.Color.White;
+            this.txtFilterInductance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtFilterInductance.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilterInductance.ForeColor = System.Drawing.Color.Black;
+            this.txtFilterInductance.Location = new System.Drawing.Point(150, 260);
+            this.txtFilterInductance.Name = "txtFilterInductance";
+            this.txtFilterInductance.Size = new System.Drawing.Size(120, 24);
+            this.txtFilterInductance.TabIndex = 7;
+            this.txtFilterInductance.Text = "10";
+            this.toolTip.SetToolTip(this.txtFilterInductance, "Enter the inductance for inductive filter in mH");
+
+            this.lblFilterInductance.AutoSize = true;
+            this.lblFilterInductance.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilterInductance.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblFilterInductance.Location = new System.Drawing.Point(0, 262);
+            this.lblFilterInductance.Name = "lblFilterInductance";
+            this.lblFilterInductance.Size = new System.Drawing.Size(77, 15);
+            this.lblFilterInductance.TabIndex = 6;
+            this.lblFilterInductance.Text = "Inductance (mH):";
+
+            this.txtFilterCapacitance.BackColor = System.Drawing.Color.White;
+            this.txtFilterCapacitance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtFilterCapacitance.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilterCapacitance.ForeColor = System.Drawing.Color.Black;
+            this.txtFilterCapacitance.Location = new System.Drawing.Point(150, 230);
+            this.txtFilterCapacitance.Name = "txtFilterCapacitance";
+            this.txtFilterCapacitance.Size = new System.Drawing.Size(120, 24);
+            this.txtFilterCapacitance.TabIndex = 5;
+            this.txtFilterCapacitance.Text = "100";
+            this.toolTip.SetToolTip(this.txtFilterCapacitance, "Enter the capacitance for capacitive filter in µF");
+ 
+            this.lblFilterCapacitance.AutoSize = true;
+            this.lblFilterCapacitance.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilterCapacitance.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblFilterCapacitance.Location = new System.Drawing.Point(0, 232);
+            this.lblFilterCapacitance.Name = "lblFilterCapacitance";
+            this.lblFilterCapacitance.Size = new System.Drawing.Size(84, 15);
+            this.lblFilterCapacitance.TabIndex = 4;
+            this.lblFilterCapacitance.Text = "Capacitance (µF):";
+
+            this.comboFilter.BackColor = System.Drawing.Color.White;
+            this.comboFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboFilter.Font = new System.Drawing.Font("MS Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboFilter.ForeColor = System.Drawing.Color.Black;
+            this.comboFilter.Location = new System.Drawing.Point(150, 200);
+            this.comboFilter.Name = "comboFilter";
+            this.comboFilter.Size = new System.Drawing.Size(120, 21);
+            this.comboFilter.TabIndex = 3;
+            this.toolTip.SetToolTip(this.comboFilter, "Select the filter type");
+
+            this.lblFilter.AutoSize = true;
+            this.lblFilter.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilter.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblFilter.Location = new System.Drawing.Point(0, 202);
+            this.lblFilter.Name = "lblFilter";
+            this.lblFilter.Size = new System.Drawing.Size(42, 15);
+            this.lblFilter.TabIndex = 2;
+            this.lblFilter.Text = "Filter:";
+
+            this.comboRectifier.BackColor = System.Drawing.Color.White;
+            this.comboRectifier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboRectifier.Font = new System.Drawing.Font("MS Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboRectifier.ForeColor = System.Drawing.Color.Black;
+            this.comboRectifier.Location = new System.Drawing.Point(150, 170);
+            this.comboRectifier.Name = "comboRectifier";
+            this.comboRectifier.Size = new System.Drawing.Size(120, 21);
+            this.comboRectifier.TabIndex = 1;
+            this.toolTip.SetToolTip(this.comboRectifier, "Select the rectifier type");
+
+            this.lblRectifier.AutoSize = true;
+            this.lblRectifier.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRectifier.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblRectifier.Location = new System.Drawing.Point(0, 172);
+            this.lblRectifier.Name = "lblRectifier";
+            this.lblRectifier.Size = new System.Drawing.Size(63, 15);
+            this.lblRectifier.TabIndex = 0;
+            this.lblRectifier.Text = "Rectifier:";
+
+            this.txtTurnsRatio.BackColor = System.Drawing.Color.White;
+            this.txtTurnsRatio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtTurnsRatio.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTurnsRatio.ForeColor = System.Drawing.Color.Black;
+            this.txtTurnsRatio.Location = new System.Drawing.Point(150, 140);
+            this.txtTurnsRatio.Name = "txtTurnsRatio";
+            this.txtTurnsRatio.Size = new System.Drawing.Size(120, 24);
+            this.txtTurnsRatio.TabIndex = 2;
+            this.txtTurnsRatio.Text = "1";
+            this.toolTip.SetToolTip(this.txtTurnsRatio, "Enter the transformer turns ratio");
+
+            this.lblTurnsRatio.AutoSize = true;
+            this.lblTurnsRatio.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurnsRatio.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTurnsRatio.Location = new System.Drawing.Point(0, 142);
+            this.lblTurnsRatio.Name = "lblTurnsRatio";
+            this.lblTurnsRatio.Size = new System.Drawing.Size(84, 15);
+            this.lblTurnsRatio.TabIndex = 1;
+            this.lblTurnsRatio.Text = "Turns Ratio:";
+
+            this.txtInputVoltage.BackColor = System.Drawing.Color.White;
+            this.txtInputVoltage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtInputVoltage.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInputVoltage.ForeColor = System.Drawing.Color.Black;
+            this.txtInputVoltage.Location = new System.Drawing.Point(150, 110);
+            this.txtInputVoltage.Name = "txtInputVoltage";
+            this.txtInputVoltage.Size = new System.Drawing.Size(120, 24);
+            this.txtInputVoltage.TabIndex = 0;
+            this.txtInputVoltage.Text = "120";
+            this.toolTip.SetToolTip(this.txtInputVoltage, "Enter the input AC voltage in volts");
+ 
+            this.lblInputVoltage.AutoSize = true;
+            this.lblInputVoltage.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInputVoltage.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblInputVoltage.Location = new System.Drawing.Point(0, 112);
+            this.lblInputVoltage.Name = "lblInputVoltage";
+            this.lblInputVoltage.Size = new System.Drawing.Size(105, 15);
+            this.lblInputVoltage.TabIndex = 0;
+            this.lblInputVoltage.Text = "Input Voltage (V):";
+
+            this.txtLoadResistance.BackColor = System.Drawing.Color.White;
+            this.txtLoadResistance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtLoadResistance.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoadResistance.ForeColor = System.Drawing.Color.Black;
+            this.txtLoadResistance.Location = new System.Drawing.Point(150, 80);
+            this.txtLoadResistance.Name = "txtLoadResistance";
+            this.txtLoadResistance.Size = new System.Drawing.Size(120, 24);
+            this.txtLoadResistance.TabIndex = 1;
+            this.txtLoadResistance.Text = "100";
+            this.toolTip.SetToolTip(this.txtLoadResistance, "Enter the load resistance in ohms");
+
+            this.lblLoadResistance.AutoSize = true;
+            this.lblLoadResistance.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoadResistance.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblLoadResistance.Location = new System.Drawing.Point(0, 82);
+            this.lblLoadResistance.Name = "lblLoadResistance";
+            this.lblLoadResistance.Size = new System.Drawing.Size(112, 15);
+            this.lblLoadResistance.TabIndex = 0;
+            this.lblLoadResistance.Text = "Load Resistance (Ω):";
+
+            this.btnSimulate.BackColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            this.btnSimulate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSimulate.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimulate.ForeColor = System.Drawing.Color.White;
+            this.btnSimulate.Location = new System.Drawing.Point(0, 10);
+            this.btnSimulate.Name = "btnSimulate";
+            this.btnSimulate.Size = new System.Drawing.Size(270, 40);
+            this.btnSimulate.TabIndex = 3;
+            this.btnSimulate.Text = "Run Simulation";
+            this.btnSimulate.UseVisualStyleBackColor = false;
+            this.btnSimulate.Click += new System.EventHandler(this.btnSimulate_Click);
+
+            this.groupBoxResults.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.groupBoxResults.Controls.Add(this.lblMismatchLoss);
+            this.groupBoxResults.Controls.Add(this.lblMismatchLossLabel);
+            this.groupBoxResults.Controls.Add(this.lblReflectionCoefficient);
+            this.groupBoxResults.Controls.Add(this.lblReflectionCoefficientLabel);
+            this.groupBoxResults.Controls.Add(this.lblOutputImpedance);
+            this.groupBoxResults.Controls.Add(this.lblOutputImpedanceLabel);
+            this.groupBoxResults.Controls.Add(this.lblInputImpedance);
+            this.groupBoxResults.Controls.Add(this.lblInputImpedanceLabel);
+            this.groupBoxResults.Controls.Add(this.lblEMI);
+            this.groupBoxResults.Controls.Add(this.lblEMILabel);
+            this.groupBoxResults.Controls.Add(this.lblSignalToNoiseRatio);
+            this.groupBoxResults.Controls.Add(this.lblSignalToNoiseRatioLabel);
+            this.groupBoxResults.Controls.Add(this.lblPowerFactor);
+            this.groupBoxResults.Controls.Add(this.lblPowerFactorLabel);
+            this.groupBoxResults.Controls.Add(this.lblTotalHarmonicDistortion);
+            this.groupBoxResults.Controls.Add(this.lblTotalHarmonicDistortionLabel);
+            this.groupBoxResults.Controls.Add(this.lblDominantHarmonic);
+            this.groupBoxResults.Controls.Add(this.lblDominantHarmonicLabel);
+            this.groupBoxResults.Controls.Add(this.lblPowerDissipation);
+            this.groupBoxResults.Controls.Add(this.lblPowerDissipationLabel);
+            this.groupBoxResults.Controls.Add(this.lblRippleVoltage);
+            this.groupBoxResults.Controls.Add(this.lblRippleVoltageLabel);
+            this.groupBoxResults.Controls.Add(this.lblOutputVoltage);
+            this.groupBoxResults.Controls.Add(this.lblOutputVoltageLabel);
+            this.groupBoxResults.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxResults.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxResults.Location = new System.Drawing.Point(320, 10);
+            this.groupBoxResults.Name = "groupBoxResults";
+            this.groupBoxResults.Size = new System.Drawing.Size(280, 340);
+            this.groupBoxResults.TabIndex = 1;
+            this.groupBoxResults.TabStop = false;
+            this.groupBoxResults.Text = "Simulation Results";
+            this.groupBoxResults.Controls.Add(this.lblThermalRunaway);
+            this.groupBoxResults.Controls.Add(this.lblThermalRunawayLabel);
+            this.lblMismatchLoss.AutoSize = true;
+            this.lblMismatchLoss.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMismatchLoss.ForeColor = System.Drawing.Color.White;
+            this.lblMismatchLoss.Location = new System.Drawing.Point(180, 310);
+            this.lblMismatchLoss.Name = "lblMismatchLoss";
+            this.lblMismatchLoss.Size = new System.Drawing.Size(35, 15);
+            this.lblMismatchLoss.TabIndex = 23;
+            this.lblMismatchLoss.Text = "0 dB";
+
+            this.lblMismatchLossLabel.AutoSize = true;
+            this.lblMismatchLossLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMismatchLossLabel.ForeColor = System.Drawing.Color.White;
+            this.lblMismatchLossLabel.Location = new System.Drawing.Point(10, 310);
+            this.lblMismatchLossLabel.Name = "lblMismatchLossLabel";
+            this.lblMismatchLossLabel.Size = new System.Drawing.Size(98, 15);
+            this.lblMismatchLossLabel.TabIndex = 22;
+            this.lblMismatchLossLabel.Text = "Mismatch Loss:";
+
+            this.lblReflectionCoefficient.AutoSize = true;
+            this.lblReflectionCoefficient.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReflectionCoefficient.ForeColor = System.Drawing.Color.White;
+            this.lblReflectionCoefficient.Location = new System.Drawing.Point(180, 290);
+            this.lblReflectionCoefficient.Name = "lblReflectionCoefficient";
+            this.lblReflectionCoefficient.Size = new System.Drawing.Size(21, 15);
+            this.lblReflectionCoefficient.TabIndex = 21;
+            this.lblReflectionCoefficient.Text = "0.0";
+
+            this.lblReflectionCoefficientLabel.AutoSize = true;
+            this.lblReflectionCoefficientLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReflectionCoefficientLabel.ForeColor = System.Drawing.Color.White;
+            this.lblReflectionCoefficientLabel.Location = new System.Drawing.Point(10, 290);
+            this.lblReflectionCoefficientLabel.Name = "lblReflectionCoefficientLabel";
+            this.lblReflectionCoefficientLabel.Size = new System.Drawing.Size(147, 15);
+            this.lblReflectionCoefficientLabel.TabIndex = 20;
+            this.lblReflectionCoefficientLabel.Text = "Reflection Coefficient:";
+
+            this.lblOutputImpedance.AutoSize = true;
+            this.lblOutputImpedance.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutputImpedance.ForeColor = System.Drawing.Color.White;
+            this.lblOutputImpedance.Location = new System.Drawing.Point(180, 270);
+            this.lblOutputImpedance.Name = "lblOutputImpedance";
+            this.lblOutputImpedance.Size = new System.Drawing.Size(35, 15);
+            this.lblOutputImpedance.TabIndex = 19;
+            this.lblOutputImpedance.Text = "0 Ω";
+
+            this.lblOutputImpedanceLabel.AutoSize = true;
+            this.lblOutputImpedanceLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutputImpedanceLabel.ForeColor = System.Drawing.Color.White;
+            this.lblOutputImpedanceLabel.Location = new System.Drawing.Point(10, 270);
+            this.lblOutputImpedanceLabel.Name = "lblOutputImpedanceLabel";
+            this.lblOutputImpedanceLabel.Size = new System.Drawing.Size(112, 15);
+            this.lblOutputImpedanceLabel.TabIndex = 18;
+            this.lblOutputImpedanceLabel.Text = "Output Impedance:";
+
+            this.lblInputImpedance.AutoSize = true;
+            this.lblInputImpedance.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInputImpedance.ForeColor = System.Drawing.Color.White;
+            this.lblInputImpedance.Location = new System.Drawing.Point(180, 250);
+            this.lblInputImpedance.Name = "lblInputImpedance";
+            this.lblInputImpedance.Size = new System.Drawing.Size(35, 15);
+            this.lblInputImpedance.TabIndex = 17;
+            this.lblInputImpedance.Text = "0 Ω";
+
+            this.lblInputImpedanceLabel.AutoSize = true;
+            this.lblInputImpedanceLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInputImpedanceLabel.ForeColor = System.Drawing.Color.White;
+            this.lblInputImpedanceLabel.Location = new System.Drawing.Point(10, 250);
+            this.lblInputImpedanceLabel.Name = "lblInputImpedanceLabel";
+            this.lblInputImpedanceLabel.Size = new System.Drawing.Size(98, 15);
+            this.lblInputImpedanceLabel.TabIndex = 16;
+            this.lblInputImpedanceLabel.Text = "Input Impedance:";
+
+            this.lblEMI.AutoSize = true;
+            this.lblEMI.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEMI.ForeColor = System.Drawing.Color.White;
+            this.lblEMI.Location = new System.Drawing.Point(180, 230);
+            this.lblEMI.Name = "lblEMI";
+            this.lblEMI.Size = new System.Drawing.Size(56, 15);
+            this.lblEMI.TabIndex = 15;
+            this.lblEMI.Text = "0 dBµV";
+
+            this.lblEMILabel.AutoSize = true;
+            this.lblEMILabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEMILabel.ForeColor = System.Drawing.Color.White;
+            this.lblEMILabel.Location = new System.Drawing.Point(10, 230);
+            this.lblEMILabel.Name = "lblEMILabel";
+            this.lblEMILabel.Size = new System.Drawing.Size(35, 15);
+            this.lblEMILabel.TabIndex = 14;
+            this.lblEMILabel.Text = "EMI:";
+
+            this.lblSignalToNoiseRatio.AutoSize = true;
+            this.lblSignalToNoiseRatio.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignalToNoiseRatio.ForeColor = System.Drawing.Color.White;
+            this.lblSignalToNoiseRatio.Location = new System.Drawing.Point(180, 210);
+            this.lblSignalToNoiseRatio.Name = "lblSignalToNoiseRatio";
+            this.lblSignalToNoiseRatio.Size = new System.Drawing.Size(42, 15);
+            this.lblSignalToNoiseRatio.TabIndex = 13;
+            this.lblSignalToNoiseRatio.Text = "0 dB";
+
+            this.lblSignalToNoiseRatioLabel.AutoSize = true;
+            this.lblSignalToNoiseRatioLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignalToNoiseRatioLabel.ForeColor = System.Drawing.Color.White;
+            this.lblSignalToNoiseRatioLabel.Location = new System.Drawing.Point(10, 210);
+            this.lblSignalToNoiseRatioLabel.Name = "lblSignalToNoiseRatioLabel";
+            this.lblSignalToNoiseRatioLabel.Size = new System.Drawing.Size(133, 15);
+            this.lblSignalToNoiseRatioLabel.TabIndex = 12;
+            this.lblSignalToNoiseRatioLabel.Text = "Signal-to-Noise Ratio:";
+
+            this.lblPowerFactor.AutoSize = true;
+            this.lblPowerFactor.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPowerFactor.ForeColor = System.Drawing.Color.White;
+            this.lblPowerFactor.Location = new System.Drawing.Point(180, 190);
+            this.lblPowerFactor.Name = "lblPowerFactor";
+            this.lblPowerFactor.Size = new System.Drawing.Size(21, 15);
+            this.lblPowerFactor.TabIndex = 11;
+            this.lblPowerFactor.Text = "0.0";
+
+            this.lblPowerFactorLabel.AutoSize = true;
+            this.lblPowerFactorLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPowerFactorLabel.ForeColor = System.Drawing.Color.White;
+            this.lblPowerFactorLabel.Location = new System.Drawing.Point(10, 190);
+            this.lblPowerFactorLabel.Name = "lblPowerFactorLabel";
+            this.lblPowerFactorLabel.Size = new System.Drawing.Size(84, 15);
+            this.lblPowerFactorLabel.TabIndex = 10;
+            this.lblPowerFactorLabel.Text = "Power Factor:";
+
+            this.lblTotalHarmonicDistortion.AutoSize = true;
+            this.lblTotalHarmonicDistortion.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalHarmonicDistortion.ForeColor = System.Drawing.Color.White;
+            this.lblTotalHarmonicDistortion.Location = new System.Drawing.Point(180, 170);
+            this.lblTotalHarmonicDistortion.Name = "lblTotalHarmonicDistortion";
+            this.lblTotalHarmonicDistortion.Size = new System.Drawing.Size(28, 15);
+            this.lblTotalHarmonicDistortion.TabIndex = 9;
+            this.lblTotalHarmonicDistortion.Text = "0 %";
+
+            this.lblTotalHarmonicDistortionLabel.AutoSize = true;
+            this.lblTotalHarmonicDistortionLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalHarmonicDistortionLabel.ForeColor = System.Drawing.Color.White;
+            this.lblTotalHarmonicDistortionLabel.Location = new System.Drawing.Point(10, 170);
+            this.lblTotalHarmonicDistortionLabel.Name = "lblTotalHarmonicDistortionLabel";
+            this.lblTotalHarmonicDistortionLabel.Size = new System.Drawing.Size(154, 15);
+            this.lblTotalHarmonicDistortionLabel.TabIndex = 8;
+            this.lblTotalHarmonicDistortionLabel.Text = "Total Harmonic Distortion:";
+
+            this.lblDominantHarmonic.AutoSize = true;
+            this.lblDominantHarmonic.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDominantHarmonic.ForeColor = System.Drawing.Color.White;
+            this.lblDominantHarmonic.Location = new System.Drawing.Point(180, 150);
+            this.lblDominantHarmonic.Name = "lblDominantHarmonic";
+            this.lblDominantHarmonic.Size = new System.Drawing.Size(56, 15);
+            this.lblDominantHarmonic.TabIndex = 7;
+            this.lblDominantHarmonic.Text = "0 Hz, 0 V";
+
+            this.lblDominantHarmonicLabel.AutoSize = true;
+            this.lblDominantHarmonicLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDominantHarmonicLabel.ForeColor = System.Drawing.Color.White;
+            this.lblDominantHarmonicLabel.Location = new System.Drawing.Point(10, 150);
+            this.lblDominantHarmonicLabel.Name = "lblDominantHarmonicLabel";
+            this.lblDominantHarmonicLabel.Size = new System.Drawing.Size(112, 15);
+            this.lblDominantHarmonicLabel.TabIndex = 6;
+            this.lblDominantHarmonicLabel.Text = "Dominant Harmonic:";
+
+            this.lblPowerDissipation.AutoSize = true;
+            this.lblPowerDissipation.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPowerDissipation.ForeColor = System.Drawing.Color.White;
+            this.lblPowerDissipation.Location = new System.Drawing.Point(180, 130);
+            this.lblPowerDissipation.Name = "lblPowerDissipation";
+            this.lblPowerDissipation.Size = new System.Drawing.Size(28, 15);
+            this.lblPowerDissipation.TabIndex = 5;
+            this.lblPowerDissipation.Text = "0 W";
+
+            this.lblPowerDissipationLabel.AutoSize = true;
+            this.lblPowerDissipationLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPowerDissipationLabel.ForeColor = System.Drawing.Color.White;
+            this.lblPowerDissipationLabel.Location = new System.Drawing.Point(10, 130);
+            this.lblPowerDissipationLabel.Name = "lblPowerDissipationLabel";
+            this.lblPowerDissipationLabel.Size = new System.Drawing.Size(112, 15);
+            this.lblPowerDissipationLabel.TabIndex = 4;
+            this.lblPowerDissipationLabel.Text = "Power Dissipation:";
+
+            this.lblRippleVoltage.AutoSize = true;
+            this.lblRippleVoltage.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRippleVoltage.ForeColor = System.Drawing.Color.White;
+            this.lblRippleVoltage.Location = new System.Drawing.Point(180, 110);
+            this.lblRippleVoltage.Name = "lblRippleVoltage";
+            this.lblRippleVoltage.Size = new System.Drawing.Size(28, 15);
+            this.lblRippleVoltage.TabIndex = 3;
+            this.lblRippleVoltage.Text = "0 V";
+
+            this.lblRippleVoltageLabel.AutoSize = true;
+            this.lblRippleVoltageLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRippleVoltageLabel.ForeColor = System.Drawing.Color.White;
+            this.lblRippleVoltageLabel.Location = new System.Drawing.Point(10, 110);
+            this.lblRippleVoltageLabel.Name = "lblRippleVoltageLabel";
+            this.lblRippleVoltageLabel.Size = new System.Drawing.Size(84, 15);
+            this.lblRippleVoltageLabel.TabIndex = 2;
+            this.lblRippleVoltageLabel.Text = "Ripple Voltage:";
+
+            this.lblOutputVoltage.AutoSize = true;
+            this.lblOutputVoltage.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutputVoltage.ForeColor = System.Drawing.Color.White;
+            this.lblOutputVoltage.Location = new System.Drawing.Point(180, 90);
+            this.lblOutputVoltage.Name = "lblOutputVoltage";
+            this.lblOutputVoltage.Size = new System.Drawing.Size(28, 15);
+            this.lblOutputVoltage.TabIndex = 1;
+            this.lblOutputVoltage.Text = "0 V";
+
+            this.lblOutputVoltageLabel.AutoSize = true;
+            this.lblOutputVoltageLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutputVoltageLabel.ForeColor = System.Drawing.Color.White;
+            this.lblOutputVoltageLabel.Location = new System.Drawing.Point(10, 90);
+            this.lblOutputVoltageLabel.Name = "lblOutputVoltageLabel";
+            this.lblOutputVoltageLabel.Size = new System.Drawing.Size(91, 15);
+            this.lblOutputVoltageLabel.TabIndex = 0;
+            this.lblOutputVoltageLabel.Text = "Output Voltage:";
+
+            this.groupBoxWaveform.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.groupBoxWaveform.Controls.Add(this.chartWaveform);
+            this.groupBoxWaveform.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxWaveform.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxWaveform.Location = new System.Drawing.Point(320, 360);
+            this.groupBoxWaveform.Name = "groupBoxWaveform";
+            this.groupBoxWaveform.Size = new System.Drawing.Size(280, 250);
+            this.groupBoxWaveform.TabIndex = 2;
+            this.groupBoxWaveform.TabStop = false;
+            this.groupBoxWaveform.Text = "Output Waveform";
+
+            chartArea1.Name = "ChartArea1";
+            this.chartWaveform.ChartAreas.Add(chartArea1);
+            this.chartWaveform.Location = new System.Drawing.Point(10, 30);
+            this.chartWaveform.Name = "chartWaveform";
+            this.chartWaveform.Size = new System.Drawing.Size(260, 210);
+            this.chartWaveform.TabIndex = 0;
+            this.chartWaveform.Text = "chartWaveform";
+ 
+            this.tabAnalysis.Controls.Add(this.groupBoxRootLocus);
+            this.tabAnalysis.Controls.Add(this.groupBoxNyquist);
+            this.tabAnalysis.Controls.Add(this.groupBoxBode);
+            this.tabAnalysis.Location = new System.Drawing.Point(4, 24);
+            this.tabAnalysis.Name = "tabAnalysis";
+            this.tabAnalysis.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAnalysis.Size = new System.Drawing.Size(608, 628);
+            this.tabAnalysis.TabIndex = 1;
+            this.tabAnalysis.Text = "Analysis";
+            this.tabAnalysis.UseVisualStyleBackColor = true;
+
+            this.groupBoxRootLocus.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.groupBoxRootLocus.Controls.Add(this.chartRootLocus);
+            this.groupBoxRootLocus.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxRootLocus.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxRootLocus.Location = new System.Drawing.Point(320, 360);
+            this.groupBoxRootLocus.Name = "groupBoxRootLocus";
+            this.groupBoxRootLocus.Size = new System.Drawing.Size(280, 250);
+            this.groupBoxRootLocus.TabIndex = 2;
+            this.groupBoxRootLocus.TabStop = false;
+            this.groupBoxRootLocus.Text = "Root Locus";
+
+            chartArea2.Name = "ChartArea1";
+            this.chartRootLocus.ChartAreas.Add(chartArea2);
+            this.chartRootLocus.Location = new System.Drawing.Point(10, 30);
+            this.chartRootLocus.Name = "chartRootLocus";
+            this.chartRootLocus.Size = new System.Drawing.Size(260, 210);
+            this.chartRootLocus.TabIndex = 0;
+            this.chartRootLocus.Text = "chartRootLocus";
+ 
+            this.groupBoxNyquist.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.groupBoxNyquist.Controls.Add(this.chartNyquist);
+            this.groupBoxNyquist.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxNyquist.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxNyquist.Location = new System.Drawing.Point(320, 10);
+            this.groupBoxNyquist.Name = "groupBoxNyquist";
+            this.groupBoxNyquist.Size = new System.Drawing.Size(280, 340);
+            this.groupBoxNyquist.TabIndex = 1;
+            this.groupBoxNyquist.TabStop = false;
+            this.groupBoxNyquist.Text = "Nyquist Plot";
+
+            chartArea3.Name = "ChartArea1";
+            this.chartNyquist.ChartAreas.Add(chartArea3);
+            this.chartNyquist.Location = new System.Drawing.Point(10, 30);
+            this.chartNyquist.Name = "chartNyquist";
+            this.chartNyquist.Size = new System.Drawing.Size(260, 300);
+            this.chartNyquist.TabIndex = 0;
+            this.chartNyquist.Text = "chartNyquist";
+
+            this.groupBoxBode.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
+            this.groupBoxBode.Controls.Add(this.chartBode);
+            this.groupBoxBode.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBode.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxBode.Location = new System.Drawing.Point(10, 10);
+            this.groupBoxBode.Name = "groupBoxBode";
+            this.groupBoxBode.Size = new System.Drawing.Size(300, 600);
+            this.groupBoxBode.TabIndex = 0;
+            this.groupBoxBode.TabStop = false;
+            this.groupBoxBode.Text = "Bode Plot";
+
+            chartArea4.Name = "ChartArea1";
+            this.chartBode.ChartAreas.Add(chartArea4);
+            this.chartBode.Location = new System.Drawing.Point(10, 30);
+            this.chartBode.Name = "chartBode";
+            this.chartBode.Size = new System.Drawing.Size(280, 560);
+            this.chartBode.TabIndex = 0;
+            this.chartBode.Text = "chartBode";
+
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.Color.White;
+            this.lblStatus.Location = new System.Drawing.Point(12, 676);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(63, 19);
+            this.lblStatus.TabIndex = 1;
+            this.lblStatus.Text = "Ready";
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(45, 45, 45);
+            this.ClientSize = new System.Drawing.Size(640, 700);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.tabControl);
+            this.Name = "Form1";
+            this.Text = "AC/DC Receiver Simulator";
+            this.tabControl.ResumeLayout(false);
+            this.tabSimulation.ResumeLayout(false);
+            this.groupBoxInputs.ResumeLayout(false);
+            this.panelInputs.ResumeLayout(false);
+            this.panelInputs.PerformLayout();
+            this.groupBoxResults.ResumeLayout(false);
+            this.groupBoxResults.PerformLayout();
+            this.groupBoxWaveform.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartWaveform)).EndInit();
+            this.tabAnalysis.ResumeLayout(false);
+            this.groupBoxRootLocus.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartRootLocus)).EndInit();
+            this.groupBoxNyquist.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartNyquist)).EndInit();
+            this.groupBoxBode.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartBode)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+            // Device Temperature Label
+            this.lblDeviceTemperature = new System.Windows.Forms.Label();
+            this.lblDeviceTemperatureLabel = new System.Windows.Forms.Label();
+
+            // Device Efficiency Label
+            this.lblDeviceEfficiency = new System.Windows.Forms.Label();
+            this.lblDeviceEfficiencyLabel = new System.Windows.Forms.Label();
+
+            // Add to groupBoxResults
+            this.groupBoxResults.Controls.Add(this.lblDeviceEfficiency);
+            this.groupBoxResults.Controls.Add(this.lblDeviceEfficiencyLabel);
+            this.groupBoxResults.Controls.Add(this.lblDeviceTemperature);
+            this.groupBoxResults.Controls.Add(this.lblDeviceTemperatureLabel);
+
+            // Configure Device Temperature Label
+            this.lblDeviceTemperature.AutoSize = true;
+            this.lblDeviceTemperature.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceTemperature.ForeColor = System.Drawing.Color.White;
+            this.lblDeviceTemperature.Location = new System.Drawing.Point(180, 330);
+            this.lblDeviceTemperature.Name = "lblDeviceTemperature";
+            this.lblDeviceTemperature.Size = new System.Drawing.Size(35, 15);
+            this.lblDeviceTemperature.TabIndex = 25;
+            this.lblDeviceTemperature.Text = "0 °C";
+
+            this.lblDeviceTemperatureLabel.AutoSize = true;
+            this.lblDeviceTemperatureLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceTemperatureLabel.ForeColor = System.Drawing.Color.White;
+            this.lblDeviceTemperatureLabel.Location = new System.Drawing.Point(10, 330);
+            this.lblDeviceTemperatureLabel.Name = "lblDeviceTemperatureLabel";
+            this.lblDeviceTemperatureLabel.Size = new System.Drawing.Size(126, 15);
+            this.lblDeviceTemperatureLabel.TabIndex = 24;
+            this.lblDeviceTemperatureLabel.Text = "Device Temperature:";
+
+            // Configure Device Efficiency Label
+            this.lblDeviceEfficiency.AutoSize = true;
+            this.lblDeviceEfficiency.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceEfficiency.ForeColor = System.Drawing.Color.White;
+            this.lblDeviceEfficiency.Location = new System.Drawing.Point(180, 350);
+            this.lblDeviceEfficiency.Name = "lblDeviceEfficiency";
+            this.lblDeviceEfficiency.Size = new System.Drawing.Size(28, 15);
+            this.lblDeviceEfficiency.TabIndex = 27;
+            this.lblDeviceEfficiency.Text = "0 %";
+
+            this.lblDeviceEfficiencyLabel.AutoSize = true;
+            this.lblDeviceEfficiencyLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceEfficiencyLabel.ForeColor = System.Drawing.Color.White;
+            this.lblDeviceEfficiencyLabel.Location = new System.Drawing.Point(10, 350);
+            this.lblDeviceEfficiencyLabel.Name = "lblDeviceEfficiencyLabel";
+            this.lblDeviceEfficiencyLabel.Size = new System.Drawing.Size(112, 15);
+            this.lblDeviceEfficiencyLabel.TabIndex = 26;
+            this.lblDeviceEfficiencyLabel.Text = "Device Efficiency:";
+            // lblThermalRunawayLabel definition
+            this.lblThermalRunawayLabel.AutoSize = true;
+            this.lblThermalRunawayLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThermalRunawayLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblThermalRunawayLabel.Location = new System.Drawing.Point(10, 510);
+            this.lblThermalRunawayLabel.Name = "lblThermalRunawayLabel";
+            this.lblThermalRunawayLabel.Size = new System.Drawing.Size(119, 15);
+            this.lblThermalRunawayLabel.TabIndex = 28;
+            this.lblThermalRunawayLabel.Text = "Thermal Status:";
+
+            // lblThermalRunaway definition
+            this.lblThermalRunaway.AutoSize = true;
+            this.lblThermalRunaway.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThermalRunaway.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblThermalRunaway.Location = new System.Drawing.Point(130, 510);
+            this.lblThermalRunaway.Name = "lblThermalRunaway";
+            this.lblThermalRunaway.Size = new System.Drawing.Size(35, 15);
+            this.lblThermalRunaway.TabIndex = 29;
+            this.lblThermalRunaway.Text = "Safe";
+            this.toolTip.SetToolTip(this.lblThermalRunaway, "Indicates if thermal runaway is detected");
+
+        }
+
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabSimulation;
+        private System.Windows.Forms.GroupBox groupBoxInputs;
+        private System.Windows.Forms.Panel panelInputs;
+        private System.Windows.Forms.Button btnSimulate;
+        private System.Windows.Forms.TextBox txtLoadResistance;
+        private System.Windows.Forms.Label lblLoadResistance;
+        private System.Windows.Forms.TextBox txtInputVoltage;
+        private System.Windows.Forms.Label lblInputVoltage;
+        private System.Windows.Forms.TextBox txtTurnsRatio;
+        private System.Windows.Forms.Label lblTurnsRatio;
+        private System.Windows.Forms.ComboBox comboRectifier;
+        private System.Windows.Forms.Label lblRectifier;
+        private System.Windows.Forms.ComboBox comboFilter;
+        private System.Windows.Forms.Label lblFilter;
+        private System.Windows.Forms.TextBox txtFilterCapacitance;
+        private System.Windows.Forms.Label lblFilterCapacitance;
+        private System.Windows.Forms.TextBox txtFilterInductance;
+        private System.Windows.Forms.Label lblFilterInductance;
+        private System.Windows.Forms.TextBox txtFilterCutoff;
+        private System.Windows.Forms.Label lblFilterCutoff;
+        private System.Windows.Forms.ComboBox comboRegulator;
+        private System.Windows.Forms.Label lblRegulator;
+        private System.Windows.Forms.TextBox txtRegulatorVoltage;
+        private System.Windows.Forms.Label lblRegulatorVoltage;
+        private System.Windows.Forms.TextBox txtPIDKp;
+        private System.Windows.Forms.Label lblPIDKp;
+        private System.Windows.Forms.TextBox txtPIDKi;
+        private System.Windows.Forms.Label lblPIDKi;
+        private System.Windows.Forms.TextBox txtPIDKd;
+        private System.Windows.Forms.Label lblPIDKd;
+        private System.Windows.Forms.TextBox txtPLLRefFreq;
+        private System.Windows.Forms.Label lblPLLRefFreq;
+        private System.Windows.Forms.TextBox txtPWMCarrierFreq;
+        private System.Windows.Forms.Label lblPWMCarrierFreq;
+        private System.Windows.Forms.TextBox txtDigitalCoeff;
+        private System.Windows.Forms.Label lblDigitalCoeff;
+        private System.Windows.Forms.ComboBox comboSwitchingDevice;
+        private System.Windows.Forms.Label lblSwitchingDevice;
+        private System.Windows.Forms.GroupBox groupBoxResults;
+        private System.Windows.Forms.Label lblOutputVoltage;
+        private System.Windows.Forms.Label lblOutputVoltageLabel;
+        private System.Windows.Forms.Label lblRippleVoltage;
+        private System.Windows.Forms.Label lblRippleVoltageLabel;
+        private System.Windows.Forms.Label lblPowerDissipation;
+        private System.Windows.Forms.Label lblPowerDissipationLabel;
+        private System.Windows.Forms.Label lblDominantHarmonic;
+        private System.Windows.Forms.Label lblDominantHarmonicLabel;
+        private System.Windows.Forms.Label lblTotalHarmonicDistortion;
+        private System.Windows.Forms.Label lblTotalHarmonicDistortionLabel;
+        private System.Windows.Forms.Label lblPowerFactor;
+        private System.Windows.Forms.Label lblPowerFactorLabel;
+        private System.Windows.Forms.Label lblSignalToNoiseRatio;
+        private System.Windows.Forms.Label lblSignalToNoiseRatioLabel;
+        private System.Windows.Forms.Label lblEMI;
+        private System.Windows.Forms.Label lblEMILabel;
+        private System.Windows.Forms.Label lblInputImpedance;
+        private System.Windows.Forms.Label lblInputImpedanceLabel;
+        private System.Windows.Forms.Label lblOutputImpedance;
+        private System.Windows.Forms.Label lblOutputImpedanceLabel;
+        private System.Windows.Forms.Label lblReflectionCoefficient;
+        private System.Windows.Forms.Label lblReflectionCoefficientLabel;
+        private System.Windows.Forms.Label lblMismatchLoss;
+        private System.Windows.Forms.Label lblMismatchLossLabel;
+        private System.Windows.Forms.GroupBox groupBoxWaveform;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartWaveform;
+        private System.Windows.Forms.TabPage tabAnalysis;
+        private System.Windows.Forms.GroupBox groupBoxBode;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBode;
+        private System.Windows.Forms.GroupBox groupBoxNyquist;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartNyquist;
+        private System.Windows.Forms.GroupBox groupBoxRootLocus;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartRootLocus;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblDeviceTemperature;
+        private System.Windows.Forms.Label lblDeviceTemperatureLabel;
+        private System.Windows.Forms.Label lblDeviceEfficiency;
+        private System.Windows.Forms.Label lblDeviceEfficiencyLabel;
+        private System.Windows.Forms.Label lblThermalRunawayLabel;
+        private System.Windows.Forms.Label lblThermalRunaway;
+    }
+}
