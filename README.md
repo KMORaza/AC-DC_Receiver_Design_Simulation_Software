@@ -4,6 +4,8 @@ _**(May 20 2025)**_ This software provides an environment for simulation and ana
 
 _**(May 21 2025)**_ I have integrated a few improvements in this software and I have written the [updated codebase](https://github.com/KMORaza/AC-DC_Receiver_Design_Simulation_Software/tree/main/AC-DC%20Receiver%20Design%20Simulation%20Software%20(enhanced)) so it is better than before. If I'll further enhance the software in future, I'll update this repository or will create a new one for the codebase.
 
+_**(May 24 2025)**_ I wrote the enhanced version of this software in Python. I wrote this software from scratch and I created a new [repository for the Python codebase](https://github.com/KMORaza/AC-DC_Receiver_Design_Simulation_Software_2). This was quite tedious job to write this software again entirely from scratch and in different programming language too, but I managed to finish building this software.
+
 ---
 
 The software simulates an AC-to-DC power conversion system, allowing users to configure circuit parameters (rectifier, filter, regulator, switching device, etc.), run transient simulations, and analyze results through metrics (output voltage, ripple, power dissipation) and plots (waveform, Bode, Nyquist, root locus). It models components like diodes, capacitors, inductors, transformers, and control systems (PID, PLL, PWM) using numerical methods and provides thermal, impedance, noise, and power factor analyses.
